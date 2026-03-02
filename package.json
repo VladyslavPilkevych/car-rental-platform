@@ -1,0 +1,35 @@
+{
+  "name": "car-rental-platform",
+  "version": "1.0.0",
+  "description": "This is a fullstack application built with **Java (Spring Boot)** and **Next.js**, designed to compute and display car availability and pricing for a car rental platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladyslavPilkevych/car-rental-platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/VladyslavPilkevych/car-rental-platform/issues"
+  },
+  "homepage": "https://github.com/VladyslavPilkevych/car-rental-platform#readme",
+  "lint-staged": {
+    "backend/**/*.java": [
+      "mvn -f backend/pom.xml test"
+    ],
+    "frontend/**/*.{js,jsx,ts,tsx}": [
+      "npm --prefix frontend run lint",
+      "npm --prefix frontend run type-check"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.1"
+  }
+}
