@@ -45,3 +45,20 @@ To run the tests:
 ```bash
 ./mvnw test
 ```
+
+## Running with Docker
+
+You can also run the application using Docker:
+
+1. **Build the image:**
+
+   ```bash
+   docker build -t car-rental-backend .
+   ```
+
+2. **Run the container:**
+   ```bash
+   docker run -p 8080:8080 car-rental-backend
+   ```
+
+The API will be available at [http://localhost:8080](http://localhost:8080).
