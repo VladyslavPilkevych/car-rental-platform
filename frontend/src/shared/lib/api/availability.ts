@@ -6,14 +6,14 @@ export type AvailabilityResponse = {
   conflicts?: boolean;
 };
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080/api";
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080";
 
 export async function fetchAvailability(
   fromDate: string,
   toDate: string,
 ): Promise<AvailabilityResponse[]> {
   const res = await fetch(
-    `${BASE_URL}/availability?from=${fromDate}&to=${toDate}`,
+    `${BASE_URL}/api/availability?from=${fromDate}&to=${toDate}`,
   );
 
   if (!res.ok) {

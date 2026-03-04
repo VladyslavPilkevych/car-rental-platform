@@ -22,8 +22,7 @@ public class AvailabilityController {
     @GetMapping("/availability")
     public List<AvailabilityResponseDto> getAvailability(
             @RequestParam(required = false) String from,
-            @RequestParam(required = false) String to
-    ) {
+            @RequestParam(required = false) String to) {
         return availabilityService.checkAvailability(from, to);
     }
 }

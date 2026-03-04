@@ -21,11 +21,11 @@
   "homepage": "https://github.com/VladyslavPilkevych/car-rental-platform#readme",
   "lint-staged": {
     "backend/**/*.java": [
-      "mvn -f backend/pom.xml test"
+      "sh -c './backend/mvnw -f backend/pom.xml test'"
     ],
     "frontend/**/*.{js,jsx,ts,tsx}": [
       "npm --prefix frontend run lint",
-      "npm --prefix frontend run type-check"
+      "sh -c 'npm --prefix frontend run type-check'"
     ]
   },
   "devDependencies": {
