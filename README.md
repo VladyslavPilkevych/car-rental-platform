@@ -2,6 +2,8 @@
 
 This is a fullstack application built with **Java (Spring Boot)** and **Next.js**, designed to compute and display car availability and pricing for a car rental platform.
 
+**Live Demo:** [https://car-rental-platform-fe.onrender.com](https://car-rental-platform-fe.onrender.com)
+
 The application reads initial data from the `data/` directory (simulating a database with potentially dirty data) and properly handles edge cases, conflicts, and overlaps, according to the specified business rules.
 
 ## Project Structure

@@ -2,6 +2,8 @@
 
 This is a [Next.js](https://nextjs.org) project built for a car rental platform.
 
+**Live Demo:** [https://car-rental-platform-fe.onrender.com](https://car-rental-platform-fe.onrender.com)
+
 ## Getting Started
 
 First, install the dependencies:
